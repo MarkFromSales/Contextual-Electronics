@@ -1,0 +1,214 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "CE Header for Teensy"
+Date "2019-02-02"
+Rev "1.0"
+Comp "www.MarkFromSales.com"
+Comment1 "Project from www.contextualelectronics.com"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MFS_Mechanical:CE_Header_Narrow J?
+U 1 1 5C56346B
+P 3350 3400
+F 0 "J?" H 3350 4400 50  0000 C CNN
+F 1 "CE_Header_Narrow" H 3350 4300 50  0000 C CNN
+F 2 "" H 4250 5100 50  0001 C CNN
+F 3 "" H 3350 3150 50  0001 C CNN
+	1    3350 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L teensy-32:Teensy-3.2 U?
+U 1 1 5C563510
+P 6750 3750
+F 0 "U?" H 6775 5237 60  0000 C CNN
+F 1 "Teensy-3.2" H 6775 5131 60  0000 C CNN
+F 2 "" H 6525 3425 60  0001 C CNN
+F 3 "" H 6525 3425 60  0001 C CNN
+	1    6750 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5C563697
+P 1700 2750
+F 0 "J?" H 1620 2425 50  0000 C CNN
+F 1 "Conn_PWR" H 1620 2516 50  0000 C CNN
+F 2 "" H 1700 2750 50  0001 C CNN
+F 3 "~" H 1700 2750 50  0001 C CNN
+	1    1700 2750
+	-1   0    0    1   
+$EndComp
+Text Label 1900 2650 0    50   ~ 0
+5V
+Text Label 1900 2850 0    50   ~ 0
+3V3
+Wire Wire Line
+	1900 2750 2900 2750
+Text Label 5900 2700 2    50   ~ 0
+5V
+Text Label 5900 3000 2    50   ~ 0
+3V3
+$Comp
+L CE_VirtualSymbols:GND #PWR?
+U 1 1 5C563AC7
+P 4400 3450
+F 0 "#PWR?" H 4400 3200 50  0001 C CNN
+F 1 "GND" H 4405 3277 50  0000 C CNN
+F 2 "" H 4400 3450 50  0000 C CNN
+F 3 "" H 4400 3450 50  0000 C CNN
+	1    4400 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CE_VirtualSymbols:GND #PWR?
+U 1 1 5C563ADF
+P 8000 2450
+F 0 "#PWR?" H 8000 2200 50  0001 C CNN
+F 1 "GND" H 8005 2277 50  0000 C CNN
+F 2 "" H 8000 2450 50  0000 C CNN
+F 3 "" H 8000 2450 50  0000 C CNN
+	1    8000 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 2700 7850 2700
+Wire Wire Line
+	7850 2700 7850 2400
+Wire Wire Line
+	7850 2400 8000 2400
+Wire Wire Line
+	8000 2400 8000 2450
+Text Label 5900 3750 2    50   ~ 0
+I2C_SCLK
+Text Label 2900 3650 2    50   ~ 0
+I2C_SCLK
+Text Label 2900 3800 2    50   ~ 0
+AIO0
+Text Label 5900 4500 2    50   ~ 0
+AIO0
+Text Label 5900 4350 2    50   ~ 0
+AIO1
+Text Label 3800 3800 0    50   ~ 0
+AIO1
+Text Label 5900 4200 2    50   ~ 0
+AIO2
+Text Label 2900 3950 2    50   ~ 0
+AIO2
+Text Label 3800 3950 0    50   ~ 0
+AIO3
+Text Label 5900 4050 2    50   ~ 0
+AIO3
+Text Label 5900 3900 2    50   ~ 0
+I2C_SDAT
+$Comp
+L CE_VirtualSymbols:GND #PWR?
+U 1 1 5C563E54
+P 6800 5300
+F 0 "#PWR?" H 6800 5050 50  0001 C CNN
+F 1 "GND" H 6805 5127 50  0000 C CNN
+F 2 "" H 6800 5300 50  0000 C CNN
+F 3 "" H 6800 5300 50  0000 C CNN
+	1    6800 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 5100 6800 5300
+NoConn ~ 6500 5100
+NoConn ~ 6650 5100
+NoConn ~ 6950 5100
+NoConn ~ 7100 5100
+NoConn ~ 5900 3600
+NoConn ~ 5900 3450
+NoConn ~ 5900 3300
+NoConn ~ 5900 3150
+NoConn ~ 5900 2850
+NoConn ~ 7650 3150
+NoConn ~ 7650 3300
+NoConn ~ 7650 3450
+NoConn ~ 7650 3600
+NoConn ~ 7650 3750
+NoConn ~ 7650 3900
+NoConn ~ 7650 4050
+NoConn ~ 7650 4200
+Text Label 7650 4350 0    50   ~ 0
+SPI_CS
+Text Label 3800 3050 0    50   ~ 0
+SPI_CS
+Text Label 7650 4500 0    50   ~ 0
+SPI_MOSI
+Text Label 2900 2900 2    50   ~ 0
+SPI_MOSI
+Text Label 3800 2900 0    50   ~ 0
+SPI_MISO
+Text Label 7650 4650 0    50   ~ 0
+SPI_MISO
+Text Label 7650 2850 0    50   ~ 0
+TEENSY_RX
+Text Label 4400 3200 0    50   ~ 0
+TEENSY_RX
+$Comp
+L CE_Resistor:R R?
+U 1 1 5C5643F9
+P 4250 3200
+F 0 "R?" V 4043 3200 50  0000 C CNN
+F 1 "R0" V 4134 3200 50  0000 C CNN
+F 2 "" V 4180 3200 50  0000 C CNN
+F 3 "" H 4250 3200 50  0000 C CNN
+	1    4250 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 3350 4400 3450
+Wire Wire Line
+	3800 3350 4400 3350
+Wire Wire Line
+	3800 3200 4100 3200
+$Comp
+L CE_Resistor:R R?
+U 1 1 5C56470A
+P 2450 3200
+F 0 "R?" V 2243 3200 50  0000 C CNN
+F 1 "R0" V 2334 3200 50  0000 C CNN
+F 2 "" V 2380 3200 50  0000 C CNN
+F 3 "" H 2450 3200 50  0000 C CNN
+	1    2450 3200
+	0    1    1    0   
+$EndComp
+Text Label 7650 3000 0    50   ~ 0
+TEENSY_TX
+Text Label 2300 3200 2    50   ~ 0
+TEENSY_TX
+Wire Wire Line
+	2600 3200 2900 3200
+Text Label 2900 3050 2    50   ~ 0
+SPI_CLK
+Text Label 5900 4650 2    50   ~ 0
+SPI_CLK
+$Comp
+L CE_VirtualSymbols:GND #PWR?
+U 1 1 5C56499F
+P 2750 4150
+F 0 "#PWR?" H 2750 3900 50  0001 C CNN
+F 1 "GND" H 2755 3977 50  0000 C CNN
+F 2 "" H 2750 4150 50  0000 C CNN
+F 3 "" H 2750 4150 50  0000 C CNN
+	1    2750 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 4100 2750 4100
+Wire Wire Line
+	2750 4100 2750 4150
+Text Label 3800 3650 0    50   ~ 0
+I2C_SDAT
+Text Label 3800 3500 0    50   ~ 0
+3V3
+$EndSCHEMATC
